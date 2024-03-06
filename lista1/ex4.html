@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const carroNovo  = Number(prompt("Preço do carro: "))
+
+        // const impostos = 0.45
+        // const distribuidor = 0.28
+
+        const distribuidora = 0.28
+        
+        const impostos = 0.45 
+
+        const carroImposto = carroNovo * impostos 
+
+        const  precoFinal = carroImposto + (carroNovo * distribuidora) + carroNovo
+
+
+        console.log("Imposto do carro:", carroImposto)
+        console.log("Valor do carro novo:", carroNovo)
+        console.log("Preço final do carro é:", precoFinal)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fabricar= Number(prompt('Preço de fabricar o carro:'))
+        const imposto= Number(prompt('Porcentagem do imposto:'))
+        const distribuidora= Number(prompt('Porcentagem distribuidora:'))
+
+        const carroImposto = fabricar * (imposto / 100)
+
+        const  precoFinal = carroImposto + (fabricar * distribuidora / 100) + fabricar
+
+        console.log("Porcentagem do imposto:" , imposto +'%')
+        console.log("Porcentagem distribuidora:", distribuidora +'%')
+        console.log("Preço final do carro é:", precoFinal +'%')
+    </script>
+</body>
+</html>
